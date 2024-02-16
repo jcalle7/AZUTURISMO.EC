@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+
+body{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 3.1em;}
+h3{ font-size: 1.5em;}
+p{ font-size: 1.5em;}
+
+button{
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 140px;
+    border: 1px rgba(7, 5, 22, 1);
+    box-shadow: 2px 2px 20px rgba(7, 5, 22, 1);
+    color: whitesmoke;
+    background-color: rgb(4, 16, 65); 
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgba(7, 5, 22, 1);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: crimson;
+} 
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vw;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/destinos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#hero h1{
+    color: whitesmoke
+}
+
+
+#destinos-populares .container{
+    align-items: last baseline;
+    padding: 40px 12px;
+
+}
+
+
+footer{
+    background-color: rgb(1, 10, 47);
+}
+
+footer p{
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 3.5em;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #destinos-populares .container{
+        display: flex;
+    }
+
+    #destinos-populares .img-container img{
+        border-radius: 50px;
+        height: 800px;
+        width: 600px;
+        background-color: #666;
+        border: 1px hsla(0, 4%, 58%, 0.84);
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #destinos-populares .text-conten{
+        float: right;
+        width: 50%;
+        margin: 0 0 0 25px;
+        align-items: center;
+    }
+
+    #destinos-populares p{
+        font-weight: bold;
+        color: rgba(227, 54, 41, 1);
+        justify-content: center;
+    }
+
+    #destinos-populares h3{
+        color: #666;
+    }
+}

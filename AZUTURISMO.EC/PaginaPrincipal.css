@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(124, 120, 120);
+}
+
+body{
+    margin: 0;
+    font-family:'Courier New', Courier, monospace
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.5em;}
+
+button{
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 5px 40px;
+    border-radius: 140px;
+    border: 1px rgba(7, 5, 22, 1);
+    box-shadow: 2px 2px 20px rgba(7, 5, 22, 1);
+    color: white;
+    background-color: rgb(1, 10, 47)
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgba(7, 5, 22, 1);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover{
+    color: crimson;
+} 
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vw;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/imagen1.jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: whitesmoke
+}
+
+
+#Plan-del-dia{
+    background-color: rgb(179, 177, 177);
+    color: white;
+    text-align: center;
+}
+
+#Plan-del-dia .container{
+    padding: 100px 12px;
+}
+
+#Plan-del-dia h2{
+    background-color: rgb(1, 10, 47);
+    margin-top: 0;
+}
+
+
+#Plan-del-dia .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/popular.jpg.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/airelibre.jpg.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/victoria-shes-UC0HZdUitWY-unsplash.jpg");
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/culturizate.jpg.jpg");
+}
+
+
+#descripcion .container{
+    text-align:end;
+    padding: 100px 12px;
+}
+
+.mostrador{
+    background-color: rgb(1, 10, 47);
+    color: white;
+    text-align: center;
+    padding: 60px 50px;
+    height: 50vw;
+}
+
+.mostrador p{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mostrador h2{
+    margin-top: 0;
+    padding: 5px 5px;
+}
+
+
+#Mapa .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vw;
+} 
+
+#Mapa h2{
+    font-size: 4vw;
+}
+
+footer{
+    background-color: rgb(1, 10, 47);
+}
+
+footer p{
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 3.5em;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    
+    #Plan-del-dia .plandeldia{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #Plan-del-dia .carta{
+        padding: 50px;
+        background-position: 390% 255%;
+        background-position-y: 0;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/popular.jpg.jpg");
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/airelibre.jpg.jpg");
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/victoria-shes-UC0HZdUitWY-unsplash.jpg");
+    }
+    
+    .carta:nth-child(4){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("imagenes/culturizate.jpg.jpg");
+    }
+
+
+    #descripcion .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #descripcion .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    #descripcion h2{
+        margin-top: 0px;
+    }
+
+    #descripcion .img-container{
+    background-image: url("imagenes/cajas.jpg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 50%;
+    height: 400px;
+    width: 600px;
+    border-radius: 40px;
+    }
+
+    .cotenido{
+        max-width: 1100px;
+        width: 100%;
+        margin: 40px auto;
+        display: flex;
+    }
+
+    .contenido h2{
+        justify-content: center;
+    }
+
+    .mostrador{
+        width: 100%;
+    }
+
+    .mostrador .fila{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .mostrador .fila .item{
+        max-width: 310px;
+        padding: 10px;
+        height: 350px;
+        text-align: center;
+        margin: 0 20px;
+        border-radius: 100px;
+        display: flex;
+    }
+
+    .mostrador .fila .item img{
+        width: 100%;
+        margin: 5px 0;
+        border-radius: 20px;
+        flex: 1;
+    }
+
+    .contenedor.texto{
+        flex: 2;
+    }
+
+    #Mapa .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Mapa h2{
+        font-size: 4vw;
+        margin: 0;
+        text-align: center;
+    }
+
+    #Mapa .img-container{
+        background-image: url("imagenes/mapa.png");
+        background-size: cover;
+        background-position: center center;
+        width: 1200px;
+        height: 900px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    #Mapa{
+        background-position-x: calc(100vw - 880px);
+    }
+}
+
+
